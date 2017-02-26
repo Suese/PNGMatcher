@@ -3,40 +3,12 @@ var arglib = require("./arglib.js")
 var fs = Promise.promisifyAll(require("fs"));
 var png = require('pngjs').PNG
 
-//var png = require('png-js')
-
-
-//Load every png in input folder
-//Load every png in the match folder
-//For each input image
-//	For each output image
-//		Choose the size of the input image
-//		Make a difference map, tile the smaller if necessary
-//		Find the average difference between the two maps
-//	Find the smallest difference that is greater than 0
-//	In output folder,  
-//		write an image file with the input file's name,  
-//		but the output of a cropped or tiled output image.
-
-
-
-
-//Args
-//	--input=
-//	--matches=
-//	--output=
-
-
-
 return (function(){
-	
 	
 var args = arglib.extend({
 	"input":"./input",
 	"matches":"./matches",
 	"output":"./output",
-	"reduction":"8",
-	"tilesize":"16",
 })
 
 
@@ -158,16 +130,18 @@ fs
 		}	
 		return fs.statAsync(args.output)
 	})
-	.then(function(stats){
-		return new Promise(function (success,failure){
-			if (!stats.isDirectory()){
-				fs.mkdirAsyc(args.output)
-					.then(success)
-			} else {
-				success()
-			}
-		})
-	})
+	
+	//Create Output Folder
+	//~ .then(function(stats){
+		//~ return new Promise(function (success,failure){
+			//~ if (!stats.isDirectory()){
+				//~ fs.mkdirAsyc(args.output)
+					//~ .then(success)
+			//~ } else {
+				//~ success()
+			//~ }
+		//~ })
+	//~ })
 	.then(function(){
 		return fs.readdirAsync(args.input)
 	})
