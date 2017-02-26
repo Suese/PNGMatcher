@@ -18,7 +18,7 @@ Arguments:
 | Argument            | Purpose                                                 |
 | --------------------|:-------------------------------------------------------:|
 | --input=<folder>    | Select custom input folder, default is ./input          |
-| --matches=<folder>  | - Select custom matches folder, default is ./matches    |
+| --matches=<folder>  | Select custom matches folder, default is ./matches      |
 	
 Install instructions:
 ------
