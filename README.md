@@ -15,8 +15,10 @@ Usage:
 Arguments:
 ------
 
---input=<folder> - Select custom input folder, default is ./input
---matches=<folder> - Select custom matches folder, default is ./matches
+| Argument            | Purpose                                                 |
+| --------------------|:-------------------------------------------------------:|
+| --input=<folder>    | Select custom input folder, default is ./input          |
+| --matches=<folder>  | - Select custom matches folder, default is ./matches    |
 	
 Install instructions:
 ------
@@ -34,6 +36,8 @@ Usage tutorial:
 
 Files:
 ------
-arglib.js -  a library for command line arguments
-pngmatcher.js - the main program
-README.md - this file
+| File           | Purpose                            |
+| -------------- |:-------------------------------------------:|
+| arglib.js      | a library to handle command-line arguments  |
+| pngmatcher.js  | the main program                            |
+| README.md      | this file                                   |
