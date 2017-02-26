@@ -4,19 +4,19 @@ A command line image matching tool for finding aesthetically similar images usin
 
 Requirements:
 ------
-NodeJS
+  - NodeJS
   - Bluebird - npm install bluebird
   - pngjs - npm install pngjs
 	
 Usage:
 ------
-  - nodejs pngmatcher.js 
+	nodejs pngmatcher.js 
 
 Arguments:
 ------
 
-  - --input=<folder>		Select custom input folder, default is ./input
-  - *--matches=<folder>	Select custom matches folder, default is ./matches
+--input=<folder> - Select custom input folder, default is ./input
+--matches=<folder> - Select custom matches folder, default is ./matches
 	
 Install instructions:
 ------
@@ -34,6 +34,6 @@ Usage tutorial:
 
 Files:
 ------
-  - arglib.js		- a library for command line arguments
-  - pngmatcher.js	- the main program
-  - README.md	- this file
+arglib.js -  a library for command line arguments
+pngmatcher.js - the main program
+README.md - this file
