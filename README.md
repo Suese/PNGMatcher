@@ -5,8 +5,8 @@ A command line image matching tool for finding aesthetically similar images usin
 Installation Requirements
 ------
   - [NodeJS](https://nodejs.org/en/)
-  - [Bluebird]() - npm install bluebird
-  - [pngjs]() - npm install pngjs
+  - [Bluebird](http://bluebirdjs.com) - npm install bluebird
+  - [pngjs](https://www.npmjs.com/package/pngjs) - npm install pngjs
 	
 Usage
 ------
@@ -17,8 +17,8 @@ Arguments
 
 | Argument            | Purpose                                                 |
 | --------------------|:-------------------------------------------------------:|
-| --input=<folder>    | Select custom input folder, default is ./input          |
-| --matches=<folder>  | Select custom matches folder, default is ./matches      |
+| --input=folder      | Select custom input folder, default is ./input          |
+| --matches=folder    | Select custom matches folder, default is ./matches      |
 	
 Install instructions
 ------
