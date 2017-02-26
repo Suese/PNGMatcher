@@ -2,17 +2,17 @@ PNGMatcher
 ======
 A command line image matching tool for finding aesthetically similar images using difference to calculate similarity.
 
-Requirements:
+Installation Requirements
 ------
-  - NodeJS
-  - Bluebird - npm install bluebird
-  - pngjs - npm install pngjs
+  - [NodeJS](https://nodejs.org/en/)
+  - [Bluebird]() - npm install bluebird
+  - [pngjs]() - npm install pngjs
 	
-Usage:
+Usage
 ------
 	nodejs pngmatcher.js 
 
-Arguments:
+Arguments
 ------
 
 | Argument            | Purpose                                                 |
@@ -20,21 +20,21 @@ Arguments:
 | --input=<folder>    | Select custom input folder, default is ./input          |
 | --matches=<folder>  | Select custom matches folder, default is ./matches      |
 	
-Install instructions:
+Install instructions
 ------
 1. Install NodeJS
 2. Open a command line
 3. Type 'npm install bluebird' to install Blurbird Promises
 4. Type 'npm install pngjs' to install pngjs
 
-Usage tutorial:
+Usage tutorial
 ------
 1. Create a folder called 'input'
 2. Place some PNG images you want to find the closest matches for
 3. Create a folder called 'matches'
 4. Place some PNG images you want to match against
 
-Files:
+Files
 ------
 | File           | Purpose                            |
 | -------------- |:-------------------------------------------:|
